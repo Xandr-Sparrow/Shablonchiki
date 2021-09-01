@@ -1,0 +1,69 @@
+// Общие части
+
+// Шрифт общий
+@font-face {
+  font-family: "Open Sans";
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+// Шрифт для форм
+@font-face {
+  font-family: "Open Sans SemiBold";
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+}
+
+// Шрифт для рейтинга
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+}
+
+// Шрифт для навигации
+@font-face {
+  font-family: "Open Sans Condensed Bold";
+  src: url(/fonts/OpenSansCondensed-Bold.ttf);
+}
+
+// Шрифт для заголовков
+@font-face {
+  font-family: "Open Sans Condensed Light";
+  src: url(/fonts/OpenSansCondensed-Light.ttf);
+}
+
+// Заголовки
+h2 {
+  font-family: "Open Sans Condensed Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+
+  .h2__gold {
+    color: #D1A954;
+  }
+
+  margin-bottom: 100px;
+}
+
+// Кнопки
+.button {
+  font-family: "Open Sans Condensed Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #D1A954;
+
+  max-width: 190px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+}
