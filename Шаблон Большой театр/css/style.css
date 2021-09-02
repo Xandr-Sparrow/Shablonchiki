@@ -309,7 +309,6 @@ h2 .h2__gold {
   display: flex;
   color: #989898;
   width: 100%;
-  height: 100%;
   padding: 1rem;
 }
 
@@ -355,8 +354,7 @@ h2 .h2__gold {
 }
 
 .contacts__form #message {
-  min-width: 310px;
-  width: 100px;
+  max-width: 310px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -378,6 +376,11 @@ h2 .h2__gold {
 }
 
 .contacts__form .button__wrap {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: button__wrap;
+  max-width: 310px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -389,10 +392,6 @@ h2 .h2__gold {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   border: 1px solid red;
-}
-
-.contacts__form .button {
-  grid-area: button;
 }
 
 .footer {
