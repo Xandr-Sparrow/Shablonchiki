@@ -2,7 +2,12 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  margin-bottom: 80px;
   width: 100%;
+
+  @media (max-width: 992px) {
+    margin-bottom: 60px;
+  }
 }
 
 .contacts__content {
@@ -10,7 +15,7 @@
   grid-template-columns: 1fr minmax(auto, 730px);
   grid-template-rows: 1fr;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 30px;
 
   @media (max-width: 992px) {
     grid-template-columns: minmax(auto, 730px);
@@ -27,11 +32,10 @@
     'item-3'
     'item-4';
   gap: 25px;
-  border: 1px solid red;
 
   @media (max-width: 992px) {
     order: 2;
-    grid-template-columns: minmax(auto, 1fr) minmax(auto, 1fr);
+    grid-template-columns: minmax(auto, 1fr) minmax(255px, 1fr);
     grid-template-rows: minmax(auto, 1fr) minmax(auto, 1fr);
     grid-template-areas:
       'item-1 item-3'
@@ -86,7 +90,6 @@
     "text button__wrap";
   gap: 40px 30px;
   justify-content: space-between;
-  border: 1px solid red;
 
   @media (max-width: 992px) {
     grid-template-columns: minmax(0px, 390px) minmax(0px, 270px);
@@ -94,12 +97,14 @@
 
   @media (max-width: 576px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr minmax(auto, 50px) minmax(auto, 1fr);
     grid-template-areas:
       "inputs"
       "message"
       "button__wrap"
       "text";
+    gap: 30px;
+
   }
 
   #name,
@@ -132,11 +137,11 @@
       "name company"
       "tel email";
     gap: 30px;
-    max-width: 390px;
-    border: 1px solid red;
+    width: 100%;
 
     @media (max-width: 576px) {
       grid-template-columns: minmax(0px, 230px) minmax(0px, 230px);
+      gap: 30px 49px;
     }
 
 
@@ -145,7 +150,7 @@
     #tel,
     #email {
       align-items: center;
-      max-width: 100%;
+      width: 100%;
       max-height: 35px;
     }
 
@@ -165,7 +170,6 @@
   .textarea__wrap {
     grid-area: message;
     width: 100%;
-    border: solid 1px red;
   }
 
   .form__text {
@@ -176,8 +180,10 @@
     font-size: 12px;
     line-height: 150%;
     color: #989898;
-    max-width: 390px;
-    border: solid 1px red;
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 
   .button__wrap {
@@ -186,6 +192,11 @@
     display: flex;
     align-items: flex-end;
     flex-direction: row-reverse;
-    border: 1px solid red;
+
+    @media (max-width: 576px) {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 }
