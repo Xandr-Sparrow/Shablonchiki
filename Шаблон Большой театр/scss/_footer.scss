@@ -1,20 +1,20 @@
 .footer {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 0;
-    border-top: 1px solid #565656;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-top: 1px solid #565656;
 
-    .copyright,
-    .license {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 150%;
-        text-align: right;
-        color: #989898;
-    }
+  .copyright,
+  .license {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: right;
+    color: #989898;
+  }
 }
